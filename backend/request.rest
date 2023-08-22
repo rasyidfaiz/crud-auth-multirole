@@ -1,0 +1,74 @@
+### GET /users
+GET http://localhost:5000/users
+### GET /users/:id
+GET http://localhost:5000/users/:id
+### POST /users
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "test",
+    "email": "test@web.co.id",
+    "password": "test123",
+    "confPassword": "test123",
+    "role": "user"
+}
+### PATCH /users/:id
+PATCH http://localhost:5000/users/:id
+Content-Type: application/json
+
+{
+    "name": "<NAME>",
+    "email": "<EMAIL>",
+    "password": "password",
+    "confPassword": "password",
+    "role": "admin"
+}
+### DELETE /users/:id
+DELETE http://localhost:5000/users/:id
+
+################################
+### POST /login as user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "user@web.co.id",
+    "password": "user123"
+}
+### POST /login as admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@web.co.id",
+    "password": "admin123"
+}
+### GET /me
+GET http://localhost:5000/me
+### DELETE /logout
+DELETE http://localhost:5000/logout
+
+################################
+### GET /products
+GET http://localhost:5000/products
+### GET /products/:id
+GET http://localhost:5000/products/68e89c2e-310a-4c0a-9529-2b7e71f3486e
+### POST /products
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product 8",
+    "price": 1000
+}
+### PATCH /products/:id
+PATCH http://localhost:5000/products/33867fc2-034e-44e3-80cf-ba0c74448382
+Content-Type: application/json
+
+{
+    "name": "Product 2 Updated",
+    "price": 1000
+}
+### DELETE /products/:id
+DELETE http://localhost:5000/products/57e35c48-7a3f-4f83-af51-f233aaebea32
