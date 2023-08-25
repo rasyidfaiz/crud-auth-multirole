@@ -1,14 +1,7 @@
-import { NavLink } from 'react-router-dom';
-
-export default function NavBar() {
+const Navbar = () => {
   return (
-    <div className="navbar bg-base-200">
-      <div className="flex-1">
-        <NavLink to="/dashboard" className="btn btn-ghost normal-case text-xl">
-          CRUD
-        </NavLink>
-      </div>
-      <div className="flex-none">
+    <>
+      <div className="navbar px-5 py-5 justify-end">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
@@ -38,6 +31,7 @@ export default function NavBar() {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
-}
+};
+export default Navbar;

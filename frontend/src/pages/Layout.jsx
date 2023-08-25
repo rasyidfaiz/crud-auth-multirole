@@ -1,17 +1,17 @@
-import NavBar from '../components/NavBar';
+import NavBar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 
 // eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {
   return (
     <>
-      <NavBar />
-      <div className="flex" style={{ minHeight: '100vh' }}>
-        <div className="flex flex-col">
+      <div className="flex flex-1 w-full min-h-screen">
+        <div className="flex">
           <Sidebar />
         </div>
-        <div className="flex flex-1 bg-base-300">
-          <main>{children}</main>
+        <div className="bg-slate-200 w-screen">
+          <NavBar />
+          <main className="px-8 py-5">{children}</main>
         </div>
       </div>
     </>
