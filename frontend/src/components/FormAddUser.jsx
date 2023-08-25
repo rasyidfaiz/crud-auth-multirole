@@ -64,7 +64,7 @@ const FormAddUser = () => {
               </select>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-success">Submit</button>
+              <button className="btn btn-success">Save</button>
             </div>
           </form>
         </div>
